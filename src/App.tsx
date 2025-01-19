@@ -3,7 +3,7 @@ import About from "./Components/About/About";
 import { Box } from "./Components/Context/Box";
 import { ThemeContextProvider } from "./Components/Context/ThemeContext";
 import { UserContextProvider } from "./Components/Context/UserContext";
-import List from "./Components/Generics/List";
+// import List from "./Components/Generics/List";
 import Toster from "./Components/Generics/Toster";
 import Home from "./Components/Home/Home";
 import RefHook from "./Components/Home/RefHook";
