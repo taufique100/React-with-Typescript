@@ -3,6 +3,7 @@ import Department from '../Department/Department'
 import Student from '../Student/Student'
 import Button from '../About/Button';
 import Container from '../About/Container';
+import Counter from '../State/Counter';
 
 const studentDetails = [
     {
@@ -48,8 +49,9 @@ export default function Home() {
       <h1>Home landing page</h1>
       <Button handleClick={clickButton}/>
       <Department />
-
       <Container style={{color:'palevioletred',width:'fit-content', textAlign:'center', border:'1px solid red'}}/>
+
+      <Counter/>
       {/* <Student student={oneStudent} /> */}
       <Student student={studentDetails} />
     </div>
