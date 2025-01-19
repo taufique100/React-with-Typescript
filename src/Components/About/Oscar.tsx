@@ -1,13 +1,10 @@
 import React from 'react'
+import { oscarProps } from './about.types'
 
-type oscarProps={
-    children: React.ReactNode
-}
-
-export default function Oscar(props:oscarProps) {
+export default function Oscar({children}:oscarProps) {
   return (
     <div>
-      {props.children}
+      {children}
     </div>
   )
 }

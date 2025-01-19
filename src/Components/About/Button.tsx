@@ -1,9 +1,7 @@
 import React from 'react'
 import Input from './Input'
 
-type buttonProps={
-    handleClick:(event: React.MouseEvent<HTMLButtonElement>)=>void
-}
+import { buttonProps } from './about.types'
 
 export default function Button(props:buttonProps) {
 

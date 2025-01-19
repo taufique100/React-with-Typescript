@@ -1,13 +1,8 @@
 import React from 'react'
+import { InputProps } from './about.types'
 
-
-type InputProps={
-    value:string,
-    handleChange: (event: React.ChangeEvent<HTMLInputElement>)=> void
-}
-
-export default function Input(props:InputProps) {
+export default function Input({value, handleChange}:InputProps) {
   return (
-    <input value={props.value} onChange={props.handleChange} type="text" />
+    <input value={value} onChange={handleChange} type="text" />
   )
 }

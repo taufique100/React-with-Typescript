@@ -1,15 +1,12 @@
 import React from 'react'
 import Oscar from './Oscar'
+import { descriptionProps } from './about.types'
 
-type descriptionProps={
-    children: string
-}
-
-export default function Description(props:descriptionProps) {
+export default function Description({children}:descriptionProps) {
   return (
     <>
     <Oscar>
-        <span>{props.children}</span>
+        <span>{children}</span>
     </Oscar>
     </>
   )
