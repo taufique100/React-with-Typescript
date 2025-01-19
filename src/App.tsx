@@ -9,7 +9,7 @@ function App() {
     <>
       <ThemeContextProvider>
         <h1>App</h1>
-        <Box/>
+        <Box />
         <Home />
         <About />
       </ThemeContextProvider>

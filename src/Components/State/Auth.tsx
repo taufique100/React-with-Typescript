@@ -8,7 +8,7 @@ type AuthUser = {
 export default function Auth() {
   const [loggedin, setLoggedIn] = useState(false);
 //   const [user, setUser] = useState<AuthUser | null>(null);
-  const [user, setUser] = useState<AuthUser>({} as AuthUser);
+  const [user, setUser] = useState<AuthUser>({} as AuthUser); // second option
 
   const handleLogin = () => {
     setLoggedIn(true);
