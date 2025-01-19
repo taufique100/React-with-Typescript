@@ -4,6 +4,8 @@ import Student from '../Student/Student'
 import Button from '../About/Button';
 import Container from '../About/Container';
 import Counter from '../State/Counter';
+import Private from './Private';
+import Profile from './Profile';
 
 const studentDetails = [
     {
@@ -47,7 +49,9 @@ export default function Home() {
   return (
     <div style={{border:'1px solid yellow', margin:'5px 10px'}}>
       <h1>Home landing page</h1>
-      <Button handleClick={clickButton}/>
+      {/* <Button handleClick={clickButton}/> */}
+
+      <Private isLoggedIn={true} component={Profile} />
       <Department />
       <Container style={{color:'palevioletred',width:'fit-content', textAlign:'center', border:'1px solid red'}}/>
 
