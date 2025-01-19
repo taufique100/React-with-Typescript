@@ -1,6 +1,7 @@
 import React from 'react'
 import Department from '../Department/Department'
 import Student from '../Student/Student'
+import Button from '../About/Button';
 
 const studentDetails = [
     {
@@ -36,11 +37,18 @@ const oneStudent = {
 }
 
 export default function Home() {
+
+    const clickButton=():void=>{
+        console.log('handle click has clicked.')
+    }
+
   return (
     <div style={{border:'1px solid yellow', margin:'5px 10px'}}>
       <h1>Home landing page</h1>
+      <Button handleClick={clickButton}/>
       <Department />
-      <Student student={oneStudent} />
+      {/* <Student student={oneStudent} /> */}
+      <Student student={studentDetails} />
     </div>
   );
 }
